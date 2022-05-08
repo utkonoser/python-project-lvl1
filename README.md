@@ -3,4 +3,4 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
-[![Actions Status](https://github.com/utkonoser/python-project-lvl1/workflows/brain-games/badge.svg)](https://github.com/utkonoser/python-project-lvl1/actions)
+[![brain-games CI](https://github.com/utkonoser/python-project-lvl1/actions/workflows/brain-games.yml/badge.svg)](https://github.com/utkonoser/python-project-lvl1/actions/workflows/brain-games.yml)
