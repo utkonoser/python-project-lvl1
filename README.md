@@ -5,4 +5,4 @@
 
 [![brain-games CI](https://github.com/utkonoser/python-project-lvl1/actions/workflows/brain-games.yml/badge.svg)](https://github.com/utkonoser/python-project-lvl1/actions/workflows/brain-games.yml)
 
-https://asciinema.org/a/eI6xgqNvtKSrqoTZ9MZrBP0Xk  - how works brain-even
+brain-even game: https://asciinema.org/a/2ZHcB3lYWGxFm2I98HGlFOUeJ
