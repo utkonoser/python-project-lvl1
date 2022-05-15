@@ -4,3 +4,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
 [![brain-games CI](https://github.com/utkonoser/python-project-lvl1/actions/workflows/brain-games.yml/badge.svg)](https://github.com/utkonoser/python-project-lvl1/actions/workflows/brain-games.yml)
+
+https://asciinema.org/a/eI6xgqNvtKSrqoTZ9MZrBP0Xk  - how works brain-even
