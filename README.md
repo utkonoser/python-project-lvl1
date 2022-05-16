@@ -8,3 +8,5 @@
 brain-even game: https://asciinema.org/a/2ZHcB3lYWGxFm2I98HGlFOUeJ
 
 brain-calc game: https://asciinema.org/a/fHfjGOSwVWnyZYZXDSCR2u8gX
+
+brain-gcd game: https://asciinema.org/a/P6ROYmijiDBtdCpsXVI92gzMi
