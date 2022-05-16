@@ -15,10 +15,10 @@ def brain_gcd():
         print(f'Question: {random_num1} {random_num2}')
         answer = prompt.string('Your answer: ')
         divs1, divs2, fin_divs = [1], [1], [1]
-        for j in range(1, random_num1):
+        for j in range(1, random_num1 + 1):
             if random_num1 % j == 0:
                 divs1.append(j)
-        for j in range(1, random_num2):
+        for j in range(1, random_num2 + 1):
             if random_num2 % j == 0:
                 divs2.append(j)
         if random_num1 > random_num2:
