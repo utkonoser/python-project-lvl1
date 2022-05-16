@@ -16,5 +16,3 @@ brain-gcd game: https://asciinema.org/a/P6ROYmijiDBtdCpsXVI92gzMi
 brain-progression game: https://asciinema.org/a/FmGVUJAmZF7GKeE7hVoxInZoi
 
 brain-prime game: https://asciinema.org/a/I6CjE2whiKuOABR7riPg5BGkQ
-
-script src="https://asciinema.org/a/2ZHcB3lYWGxFm2I98HGlFOUeJ" id="asciicast-14" async></script>
