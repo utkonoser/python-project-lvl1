@@ -5,18 +5,24 @@
 
 [![brain-games CI](https://github.com/utkonoser/python-project-lvl1/actions/workflows/brain-games.yml/badge.svg)](https://github.com/utkonoser/python-project-lvl1/actions/workflows/brain-games.yml)
 
-
-
-brain-even game: https://asciinema.org/a/2ZHcB3lYWGxFm2I98HGlFOUeJ
-
-brain-calc game: https://asciinema.org/a/fHfjGOSwVWnyZYZXDSCR2u8gX
-
-brain-gcd game: https://asciinema.org/a/P6ROYmijiDBtdCpsXVI92gzMi
-
-brain-progression game: https://asciinema.org/a/FmGVUJAmZF7GKeE7hVoxInZoi
-
-brain-prime game: https://asciinema.org/a/I6CjE2whiKuOABR7riPg5BGkQ
+BRAIN-EVEN GAME
 
 [![asciicast](https://asciinema.org/a/2ZHcB3lYWGxFm2I98HGlFOUeJ.svg)](https://asciinema.org/a/2ZHcB3lYWGxFm2I98HGlFOUeJ)
 
-<script id="asciicast-2ZHcB3lYWGxFm2I98HGlFOUeJ" src="https://asciinema.org/a/2ZHcB3lYWGxFm2I98HGlFOUeJ.js" async></script>
+BRAIN-CALC GAME
+
+[![asciicast](https://asciinema.org/a/fHfjGOSwVWnyZYZXDSCR2u8gX.svg)](https://asciinema.org/a/fHfjGOSwVWnyZYZXDSCR2u8gX)
+
+BRAIN-GCD GAME
+
+[![asciicast](https://asciinema.org/a/P6ROYmijiDBtdCpsXVI92gzMi.svg)](https://asciinema.org/a/P6ROYmijiDBtdCpsXVI92gzMi)
+
+BRAIN-PROGRESSION GAME
+
+[![asciicast](https://asciinema.org/a/FmGVUJAmZF7GKeE7hVoxInZoi.svg)](https://asciinema.org/a/FmGVUJAmZF7GKeE7hVoxInZoi)
+
+BRAIN-PRIME GAME
+
+[![asciicast](https://asciinema.org/a/I6CjE2whiKuOABR7riPg5BGkQ.svg)](https://asciinema.org/a/I6CjE2whiKuOABR7riPg5BGkQ)
+
+
