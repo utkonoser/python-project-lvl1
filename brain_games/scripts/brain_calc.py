@@ -1,11 +1,9 @@
-
-
-from brain_games.games.cli_calc import brain_calc
+from brain_games.engine import run_game
+from brain_games.games import cli_calc
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    brain_calc()
+    run_game(cli_calc)
 
 
 if __name__ == '__main__':

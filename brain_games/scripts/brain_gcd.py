@@ -1,11 +1,9 @@
-
-
-from brain_games.games.cli_gcd import brain_gcd
+from brain_games.engine import run_game
+from brain_games.games import cli_gcd
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    brain_gcd()
+    run_game(cli_gcd)
 
 
 if __name__ == '__main__':

@@ -1,31 +1,26 @@
 import random
-import prompt
+import operator
+
+operations = {'+': operator.add, '-': operator.sub, '*': operator.mul}
+
+DESCRIPTION = 'What is the result of the expression?'
+MAX_NUMBER = 10
+MIN_NUMBER = 1
 
 
-def brain_calc():
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print('What is the result of the expression?')
-    i = 0
-    while i <= 3:
-        if i == 3:
-            return print(f'Congratulations, {name}!')
-        list_of_exp = ['+', '-', '*']
-        random_exp = random.choice(list_of_exp)
-        random_num1 = random.randint(1, 25)
-        random_num2 = random.randint(1, 10)
-        print(f'Question: {random_num1} {random_exp} {random_num2}')
-        answer = prompt.string('Your answer: ')
-        if random_exp == '+':
-            result = random_num1 + random_num2
-        if random_exp == '-':
-            result = random_num1 - random_num2
-        if random_exp == '*':
-            result = random_num1 * random_num2
-        if (str(result) == answer):
-            print('Correct!')
-            i += 1
-        if (str(result) != answer):
-            print(f'\'{answer}\' is wrong answer ;(. \
-Correct answer was \'{result}\'.')
-            return print(f'Let\'s try again, {name}!')
+def get_question_and_answer():
+    first_number = generate_number()
+    second_number = generate_number()
+    symbol, operation = generate_operation()
+    task = f'{first_number} {symbol} {second_number}'
+    answer = str(operation(first_number, second_number))
+    return task, answer
+
+
+def generate_operation():
+    symbol, operation = random.choice(list(operations.items()))
+    return symbol, operation
+
+
+def generate_number():
+    return random.randint(MIN_NUMBER, MAX_NUMBER)

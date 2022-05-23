@@ -1,35 +1,27 @@
 import random
-import prompt
+
+DESCRIPTION = 'What number is missing in the progression?'
+PROGRESSION_LENGHT = 10
+MAX_NUMBER = 100
+MIN_NUMBER = 1
+MIN_PROGRESSION_STEP = 1
+MAX_PROGRESSION_STEP = 10
 
 
-def brain_progression():
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print('What number is missing in the progression?')
-    i = 0
-    while i <= 3:
-        if i == 3:
-            return print(f'Congratulations, {name}!')
-        random_num = random.randint(1, 20)
-        random_step = random.randint(1, 10)
-        random_len = random.randint(5, 12)
-        random_elem = random.randint(1, random_len)
-        numbers = ''
-        result = 0
-        j = 1
-        while j <= random_len:
-            if j == random_elem:
-                result = random_num + (random_step * j)
-                numbers += '.. '
-                j += 1
-            numbers += str(random_num + (random_step * j)) + ' '
-            j += 1
-        print(f'Question: {numbers}')
-        answer = prompt.string('Your answer: ')
-        if (str(result) == answer):
-            print('Correct!')
-            i += 1
-        if (str(result) != answer):
-            print(f'\'{answer}\' is wrong answer ;(. \
-Correct answer was \'{str(result)}\'.')
-            return print(f'Let\'s try again, {name}!')
+def create_progression(first_number, max_number, step):
+    return range(first_number, max_number, step)
+
+
+def get_question_and_answer():
+    first_number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    step = random.randint(MIN_PROGRESSION_STEP, MAX_PROGRESSION_STEP)
+    max_number = first_number + (PROGRESSION_LENGHT * step)
+    progression = create_progression(first_number, max_number, step)
+    hidden_element_index = random.randint(0, len(progression) - 1)
+    hidden_element = progression[hidden_element_index]
+    result_progression = ' '.join([
+        '..' if index == hidden_element_index else str(item)
+        for index, item in enumerate(progression)
+    ])
+    question = result_progression
+    return question, str(hidden_element)

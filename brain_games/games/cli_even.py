@@ -1,28 +1,20 @@
 import random
-import prompt
+
+DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
+MAX_NUMBER = 100
+MIN_NUMBER = 1
 
 
-def brain_even():
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    i = 0
-    while i <= 3:
-        random_num = random.randint(1, 100)
-        print(f'Question: {random_num}')
-        answer = prompt.string('Your answer: ')
-        result = random_num % 2
-        if (result == 0 and answer == 'yes') or (result != 0 and
-                                                 answer == 'no'):
-            print('Correct!')
-            i += 1
-        if (result == 0 and answer != 'yes'):
-            print(f'\'{answer}\' is wrong answer ;(. \
-Correct answer was \'yes\'.')
-            return print(f'Let\'s try again, {name}!')
-        if (result != 0 and answer != 'no'):
-            print(f'\'{answer}\' is wrong answer ;(. \
-Correct answer was \'no\'.')
-            return print(f'Let\'s try again, {name}!')
-        if i == 3:
-            return print(f'Congratulations, {name}!')
+def get_question_and_answer():
+    number = generate_number()
+    question = str(number)
+    correct_answer = 'yes' if is_even(number) else 'no'
+    return question, correct_answer
+
+
+def is_even(number):
+    return number % 2 == 0
+
+
+def generate_number():
+    return random.randint(MIN_NUMBER, MAX_NUMBER)

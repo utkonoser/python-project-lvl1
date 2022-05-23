@@ -1,11 +1,9 @@
-
-
-from brain_games.games.cli_progression import brain_progression
+from brain_games.engine import run_game
+from brain_games.games import cli_progression
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    brain_progression()
+    run_game(cli_progression)
 
 
 if __name__ == '__main__':

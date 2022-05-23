@@ -1,11 +1,9 @@
-
-
-from brain_games.games.cli_even import brain_even
+from brain_games.engine import run_game
+from brain_games.games import cli_even
 
 
 def main():
-    print("Welcome to the Brain Games!")
-    brain_even()
+    run_game(cli_even)
 
 
 if __name__ == '__main__':
